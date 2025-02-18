@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 import axios from "axios"
-import ytdl from "ytdl-core";
+import ytdl from "@distube/ytdl-core";
 import express from 'express'
 import cors from "cors"
 import OpenAI from "openai"
