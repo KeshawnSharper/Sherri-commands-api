@@ -1,0 +1,25 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "openai": "^4.85.1",
+    "puppeteer": "^24.2.1",
+    "scraper": "file:",
+    "ytdl-core": "npm:@distube/ytdl-core@^4.15.9"
+  },
+  "type": "module",
+  "description": "",
+  "types": "module"
+}
