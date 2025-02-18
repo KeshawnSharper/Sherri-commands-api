@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@distube/ytdl-core": "^4.16.4",
     "@google/generative-ai": "^0.21.0",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
@@ -16,8 +17,7 @@
     "googleapis": "^144.0.0",
     "openai": "^4.85.1",
     "puppeteer": "^24.2.1",
-    "scraper": "file:",
-    "ytdl-core": "npm:@distube/ytdl-core@^4.15.9"
+    "scraper": "file:"
   },
   "type": "module",
   "description": "",
