@@ -19,27 +19,23 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 
 
-const corsOptions = {
-  origin: '*',
-  methods: '*',
-  allowedHeaders: '*'
-};
 
 const app = express()
 const port = 3000
 const breakSearchTermDownForYoutubeUrl = (term) => {
     return `${term.replace(/ /g, "+")}` 
 }
-app.use(cors(corsOptions));
-app.set('Access-Control-Allow-Origin', '*');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+app.use(cors(corsOptions))
+app.get('/', (req, res) => {
+  res.send('helljkfreol')
 });
 
 const getPageToScrape = async (link) => {
