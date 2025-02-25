@@ -31,6 +31,7 @@ const breakSearchTermDownForYoutubeUrl = (term) => {
     return `${term.replace(/ /g, "+")}` 
 }
 app.use(cors(corsOptions));
+app.set('Access-Control-Allow-Origin', '*');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
